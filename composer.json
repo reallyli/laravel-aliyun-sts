@@ -1,0 +1,37 @@
+{
+    "name": "reallyli/laravel-aliyun-sts",
+    "description": "Aliyun STS for Laravel.",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "ext-json": "*",
+        "illuminate/support": "~5.0||~6.0||~7.0||^8.0",
+        "alibabacloud/sts": "^1.8",
+        "aliyuncs/oss-sdk-php": "^2.4"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Reallyli\\AliyunSts\\":"./src"
+        }
+    },
+    "autoload-dev": {},
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "reallyli",
+            "email": "zreallyli@outlook.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Reallyli\\AliyunSts\\ServiceProvider"
+            ],
+            "aliases": {
+                "AliyunSts": "Reallyli\\AliyunSts\\AliyunSts"
+            }
+        }
+    },
+    "minimum-stability":"dev"
+}
